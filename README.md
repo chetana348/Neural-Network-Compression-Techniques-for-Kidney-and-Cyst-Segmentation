@@ -17,4 +17,4 @@ tensorflow-gpu==2.3.0
 cudatoolkit=11.0.221=h74a9793_0
 cudnn=8.2.1=cuda11.3_0
 
-The weights can be found .here_[https://uab.box.com/s/6n09lb54qr8o921y0kprp3qgxpvn1qth]
+The weights can be found [here](https://uab.box.com/s/6n09lb54qr8o921y0kprp3qgxpvn1qth)
