@@ -116,4 +116,21 @@ If you would like to **reproduce our results using the CRISP dataset**, follow t
    This notebook handles formatting, normalization, and preparing images for training.
 
 **Note:** If your file naming convention differs, please modify the notebook accordingly.
+---
+
+## 📁 Repository Structure
+
+Below is an overview of the main files and notebooks included in this repository:
+
+```
+├── (0)Raw_image_processing.ipynb       # Preprocess raw CRISP data into model-ready format
+├── (1) PCA I.ipynb                     # Progressive pCA - Part I (initial channel analysis)
+├── (1) PCA II.ipynb                    # Progressive pCA - Part II (aggregation implementation)
+├── (1) Pruning I.ipynb                 # Weight pruning - Part I
+├── (1) Pruning II.ipynb                # Weight pruning - Part II (refinement and evaluation)
+├── (2) PTM Train and Prediction.ipynb  # Training and inference with the compressed UNet++
+├── (3) Performance Calculation.ipynb   # Post-training performance evaluation (Dice, HD, etc.)
+├── Data_Gen_2D.py                      # Data generator script for 2D image batches
+```
+> 📌 Notebooks are named in logical execution order: preprocessing → compression → training → evaluation.
 
