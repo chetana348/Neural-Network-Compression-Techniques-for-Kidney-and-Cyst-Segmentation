@@ -21,3 +21,27 @@ These compressions occur **dynamically during training**, enabling:
 - Minimal performance degradation
 
 > ✅ Works out-of-the-box on kidney and cyst segmentation tasks with annotated MRI scans from ADPKD patients.
+
+---
+
+## 🛠️ Environment
+
+To run this code on a local machine, please ensure the following versions are used:
+
+- `python` = 3.8.5  
+- `keras` = 2.8.0  
+- `tb-nightly` = 2.9.0a20220301  
+- `tensorflow` = 2.8.0  
+- `tensorflow-gpu` = 2.3.0  
+- `cudatoolkit` = 11.0.221=h74a9793_0  
+- `cudnn` = 8.2.1=cuda11.3_0  
+
+> ⚠️ **Note:** The code is optimized for **TensorFlow GPU 2.3.0** with **CUDA 11.x** support. Compatibility between TensorFlow, CUDA, and cuDNN is critical for correct GPU execution.
+
+### 🔧 Recommended Setup (with conda)
+
+```bash
+conda create -n adpkd_compression_env python=3.8.5
+conda activate adpkd_compression_env
+pip install keras==2.8.0 tb-nightly==2.9.0a20220301 tensorflow==2.8.0 tensorflow-gpu==2.3.0
+
