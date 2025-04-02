@@ -44,7 +44,7 @@ To run this code on a local machine, please ensure the following versions are us
 conda create -n adpkd_compression_env python=3.8.5
 conda activate adpkd_compression_env
 pip install keras==2.8.0 tb-nightly==2.9.0a20220301 tensorflow==2.8.0 tensorflow-gpu==2.3.0
-
+```
 ---
 
 ## 📚 Dataset
