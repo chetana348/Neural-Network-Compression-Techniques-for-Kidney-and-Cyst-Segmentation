@@ -134,3 +134,36 @@ Below is an overview of the main files and notebooks included in this repository
 ```
 > 📌 Notebooks are named in logical execution order: preprocessing → compression → training → evaluation.
 
+---
+
+## 🧠 Model Weights
+
+Pretrained model weights for the compressed UNet++ (with PCA and pruning) can be **provided upon request**.
+
+If you'd like access to the weights for evaluation or fine-tuning
+- Open an issue on this repository, or  
+- Contact us directly via email
+
+> 📬 We are happy to share the weights for **research and non-commercial use**.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 📝 Citation
+
+If you use this work in your research, please cite:
+
+```
+UNet++ Compression Techniques for Kidney and Cyst Segmentation in Autosomal Dominant Polycystic Kidney Disease  
+Chetana Krishnan, Emma Schmidt, Ezinwanne Onuoha, Michal Mrug, Carlos E. Cardenas, Harrison Kim,  
+Consortium for Radiologic Imaging Studies of Polycystic Kidney Disease (CRISP) investigators  
+Available at JST: [PDF from jst.go.jp]
+```
+
+> 📄 *UNet++ Compression Techniques for Kidney and Cyst Segmentation in Autosomal Dominant Polycystic Kidney Disease*  
+> Authors: Chetana Krishnan, Emma Schmidt, Ezinwanne Onuoha, Michal Mrug, Carlos E. Cardenas, Harrison Kim, and the CRISP investigators.
