@@ -72,4 +72,48 @@ However, these techniques are designed to be **model-agnostic** and should gener
 
 > 🧪 With minimal adjustments, you can integrate this compression framework into other segmentation models for broader use cases beyond ADPKD.
 
+---
+
+## 🧾 Dataset Preparation & Processing
+
+If you would like to **reproduce our results using the CRISP dataset**, follow the steps below:
+
+### Preprocessing Steps
+
+1. **Access the CRISP dataset**  
+   https://repository.niddk.nih.gov/study/10
+
+2. **Convert 3D to 2D slices**  
+   Slice the 3D MRI volumes into individual 2D images.
+
+3. **Crop kidneys separately**  
+   Extract and save the **left** and **right** kidneys independently from each slice.
+
+4. **Organize your dataset**  
+   Place the input images, kidney labels, and cyst labels in the **same folder**.
+
+5. **Follow this naming convention**  
+   ```
+   PatientID_slicenumber_L|R_M|K|C
+   ```
+   - `L` or `R` for left or right kidney  
+   - `M` for input image  
+   - `K` for kidney label  
+   - `C` for cyst label  
+
+   **Example:**
+   ```
+   001_23_L_M.png   # Input image (left kidney, slice 23)
+   001_23_L_K.png   # Kidney mask
+   001_23_L_C.png   # Cyst mask
+   ```
+
+6. **Preprocess using the notebook**  
+   Run:
+   ```
+   (0)Raw_image_processing.ipynb
+   ```
+   This notebook handles formatting, normalization, and preparing images for training.
+
+**Note:** If your file naming convention differs, please modify the notebook accordingly.
 
